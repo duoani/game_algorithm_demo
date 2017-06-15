@@ -1,0 +1,48 @@
+.row {
+  position: relative;
+  font-size: 0;
+}
+.cell {
+  /* width: 15px; */
+  /* height: 15px; */
+}
+.item-0 {
+  background-color: transparent;
+}
+.item-1 {
+  background-color: brown;
+}
+.item-2 {
+  background-color: blue;
+}
+.item-3 {
+  background-color: brown;
+}
+.item-4 {
+  background-color: purple;
+}
+.item-5 {
+  background-color: blueviolet;
+}
+.item-flag {
+  background-color: transparent;
+  border-color: red;
+}
+
+.wall {
+  background-color: brown;
+}
+/*A Star*/
+table {
+  border-left:#CCC 1px solid;
+  border-top:#CCC 1px solid;
+  border-collapse:collapse;
+  width: 100%;
+}
+td {
+  border-right:#CCC 1px solid;
+  border-bottom:#CCC 1px solid;
+  height:10px;
+  width:10px;
+  font-size:0;
+}
