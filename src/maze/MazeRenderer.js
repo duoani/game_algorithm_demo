@@ -1,14 +1,4 @@
-var Maze = require('./Maze');
-
-exports.init = function (elem, rowCount, colCount) {
-  render(elem, rowCount, colCount);
-  elem.addEventListener('click', function () {
-    render(elem, rowCount, colCount);
-  });
-};
-
-function render(elem, rowCount, colCount) {
-  var maze = Maze.create(rowCount, colCount);
+exports.renderTo = function (container, maze) {
   var table = document.createElement('table');
   table.className = 'table';
   for (var i = 0; i < maze.length; i++) {
@@ -23,6 +13,6 @@ function render(elem, rowCount, colCount) {
     }
     table.appendChild(tr);
   }
-  elem.innerHTML = '';
-  elem.appendChild(table);
-}
+  container.innerHTML = '';
+  container.appendChild(table);
+};

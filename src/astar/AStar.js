@@ -112,6 +112,7 @@ AStar.prototype = {
 
     while (length = open.length) {
       node = this.getMinNode(); //取最优点
+      console.log('Test: ', node.X, node.Y)
 
       if (node.I != GID) { //若不是终点
 
